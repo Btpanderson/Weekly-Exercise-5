@@ -239,13 +239,12 @@ mallorca_bike_animation <- ggmap(mallorca_map) +
              aes(x = lon,
                  y = lat),
              color = 'red',
-             alpha = 1,
-             size = 3) +
+             alpha = 2,
+             size = 1.5) +
   geom_line(data = mallorca_bike_day7,
             aes(x = lon,
                 y = lat,
-                color = ele,
-                size = 1)) +
+                color = ele)) +
   theme_map() +
   labs(title = "Lisa's Bike Journey in Mallorca ",
        subtitle = "Date and Time: {frame_along}",
